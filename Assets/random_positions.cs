@@ -42,8 +42,10 @@ public class random_positions : MonoBehaviour
                 float eixoY = Random.Range(2.5f, 3.7f);
                     
                 char let = this.letras[index];
+                
                 GameObject letra = (GameObject)Instantiate(Resources.Load("Prefabs/" + let), new Vector3(eixoX, eixoY, this.transform.localPosition.z + 15f), Quaternion.identity);
-                letra.transform.Rotate(0, 180, 0);                    
+                letra.transform.Rotate(0, 180, 0);        
+                GameObject.Find("vilao_modafoca").transform.position = new Vector3(eixoX, eixoY, this.transform.localPosition.z + 15f);
                 letra.GetComponent<movement>().config = this.GetComponent<configJogo>();                    
                 InstantiationTimer = 3f;
             }

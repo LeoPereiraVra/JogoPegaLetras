@@ -21,10 +21,10 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 911, y: 424}
-  m_MaxSize: {x: 22006, y: 10000}
+  m_MinSize: {x: 913, y: 448}
+  m_MaxSize: {x: 22008, y: 10024}
   vertical: 0
-  controlID: 903
+  controlID: 276
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -162,7 +162,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d6fbffff
+      m_ExpandedIDs: 8cefffff6a510000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -208,10 +208,10 @@ MonoBehaviour:
     y: 0
     width: 1080
     height: 635
-  m_MinSize: {x: 711, y: 424}
-  m_MaxSize: {x: 18006, y: 10000}
+  m_MinSize: {x: 713, y: 448}
+  m_MaxSize: {x: 18008, y: 10024}
   vertical: 0
-  controlID: 904
+  controlID: 277
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -233,10 +233,10 @@ MonoBehaviour:
     y: 0
     width: 567
     height: 635
-  m_MinSize: {x: 204, y: 424}
-  m_MaxSize: {x: 4004, y: 8024}
+  m_MinSize: {x: 204, y: 448}
+  m_MaxSize: {x: 4004, y: 8048}
   vertical: 1
-  controlID: 905
+  controlID: 278
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -415,8 +415,8 @@ MonoBehaviour:
     y: 317
     width: 567
     height: 318
-  m_MinSize: {x: 204, y: 224}
-  m_MaxSize: {x: 4004, y: 4024}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 2}
   m_Panes:
   - {fileID: 2}
@@ -485,20 +485,19 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SearchArea: 1
-    m_Folders:
-    - Assets
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 64
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\Projetos\Jogo Pega Letras
+  m_LastProjectPath: C:\Users\romer\OneDrive\Documentos\JogoPegaLetras
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 86450000
     m_LastClickedID: 17798
-    m_ExpandedIDs: ffffffff00000000780c0000cc0c0000480d0000680d0000d00d0000d40d00002c0e0000ec0e0000160f0000700f0000840f00000210000056100000381100006c110000ca110000f8110000261200006613000022140000be140000c61400000a150000961500002a170000401700004e17000082190000041a00004c1a0000043b0000063b0000083b00000a3b00000c3b00000e3b0000103b0000123b0000143b0000163b0000183b00001a3b00001c3b00001e3b0000203b0000223b0000243b0000263b0000283b00002a3b0000
+    m_ExpandedIDs: ffffffff00000000ce120000541900007c1b0000f0210000d8230000a42500000e2600005a2700006027000024490000d2490000ec4900001a4a00006a4a0000f64a0000444b00009a4c0000d44c0000f24c0000f64c0000124e00004a4f0000d0510000425200004452000046520000485200004a5200004c5200004e52000050520000525200005452000056520000585200005a5200005c5200005e52000060520000625200006452000066520000685200006a5200006c5200006e520000705200007252000074520000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -524,9 +523,9 @@ MonoBehaviour:
       m_ResourceFile: 
   m_AssetTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 220e0000
-    m_LastClickedID: 3618
-    m_ExpandedIDs: ffffffff00000000780c0000cc0c0000480d0000680d0000d00d0000d40d0000220e00002c0e0000ec0e0000160f0000700f0000840f00000210000056100000381100006c110000ca110000f8110000261200006613000022140000be140000c6140000961500002a170000401700004e17000082190000041a00004c1a0000043b0000063b0000083b00000a3b00000c3b00000e3b0000103b0000123b0000143b0000163b0000183b00001a3b00001c3b00001e3b0000203b0000223b0000243b0000263b0000283b00002a3b0000
+    m_SelectedIDs: 74510000
+    m_LastClickedID: 0
+    m_ExpandedIDs: ffffffff00000000ce120000541900007c1b0000f0210000d8230000a42500000e2600005a2700006027000024490000d2490000ec4900001a4a00006a4a0000f64a0000444b00009a4c0000d44c0000f24c0000f64c0000124e00004a4f0000d0510000425200004452000046520000485200004a5200004c5200004e52000050520000525200005452000056520000585200005a5200005c5200005e52000060520000625200006452000066520000685200006a5200006c5200006e520000705200007252000074520000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -551,8 +550,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 220e0000
-    m_LastClickedInstanceID: 3618
+    m_SelectedInstanceIDs: 74510000
+    m_LastClickedInstanceID: 20852
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
@@ -600,8 +599,8 @@ MonoBehaviour:
     y: 0
     width: 279
     height: 635
-  m_MinSize: {x: 277, y: 74}
-  m_MaxSize: {x: 4002, y: 4024}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
