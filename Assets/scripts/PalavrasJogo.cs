@@ -259,7 +259,7 @@ public class PalavrasJogo : MonoBehaviour
     private bool EscreveLetra(string letra)
     {
         bool achou = false;
-        string txtSemAcento = tirarAcento(palavras[index]);
+        string txtSemAcento = tirarAcento(palavras[index]).ToUpper();
         if (txtSemAcento.Contains(letra+""))
         {
             

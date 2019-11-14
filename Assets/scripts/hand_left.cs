@@ -15,8 +15,8 @@ public class hand_left : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {        
-
+    {
+        outputPosition = new Vector3(0.2f, 3f, 1.7f);
     }
 
    
@@ -36,15 +36,23 @@ public class hand_left : MonoBehaviour
 
 				if(manager.IsJointTracked(userId, (int)joint))
 				{
-
+                     
 					// output the joint position for easy tracking
 					Vector3 jointPos = manager.GetJointPosition(userId, (int)joint);
 					jointPos.Set(jointPos.x * 2, jointPos.y * 2, jointPos.z);
 					transform.localPosition = jointPos;
-
+                    outputPosition = jointPos;
 				}
 			}
-		}
+            else
+            {               
+                transform.localPosition = outputPosition;
+            }
+        }
+        else
+        {
+            transform.localPosition = outputPosition;
+        }
     }
 	void OnCollisionEnter (Collision col)
     {

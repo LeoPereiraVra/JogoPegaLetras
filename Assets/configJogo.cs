@@ -12,10 +12,13 @@ public class configJogo : MonoBehaviour
     public List<string> letrasFaltantes;
     public float timerLetras = 0;
     static string fase_selecionada;
-    static string linguagem;
+    public static string linguagem;
+    static int nivel;
+    public Canvas canvasMenu;
     // Start is called before the first frame update
     void Start()
     {
+        canvasMenu.enabled = false;
         fase_selecionada = "";
         letrasFaltantes = new List<string>();
         if (timerLetras == 0)
@@ -46,43 +49,68 @@ public class configJogo : MonoBehaviour
             certo.Play();
     }
 
+    public string getLinguagem()
+    {
+        return linguagem;
+    }
+
+    public static string getPathConfiguracao()
+    {
+        return configJogo.GetPathInicial() + Path.DirectorySeparatorChar + "config.txt";
+    }
+
+    public static string GetPathInicial()
+    {
+        string r = Directory.GetParent(Application.dataPath) + "/Imagens/leves";
+        return r.Replace('/', Path.DirectorySeparatorChar);
+    }
+
     public static string GetPathLinguagem()
     {
         if (linguagem == "" || linguagem == null)
         {
             linguagem = "Português";
         }
-        string r = Application.dataPath + "/Imagens/leves/"+linguagem;
-        return r.Replace('/', Path.DirectorySeparatorChar);
+        
+        return GetPathInicial() + Path.DirectorySeparatorChar + linguagem;
     }
 
 
     public static string GetPathCenas()
-    {
-        string r =  GetPathLinguagem()+"/cenas";
-        return r.Replace('/', Path.DirectorySeparatorChar);
+    {        
+        return GetPathLinguagem() + Path.DirectorySeparatorChar + "cenas";
     }
     public static string GetFaseSelecionada()
     {
-        string r = GetPathCenas()+"/" + fase_selecionada;
-        return r.Replace('/', Path.DirectorySeparatorChar); 
+
+        return GetPathCenas() + Path.DirectorySeparatorChar + fase_selecionada;
     }
 
     public static string GetImgCena(string file)
     {
-        string r = GetPathCenas()+"/"+file;
-        return r.Replace('/', Path.DirectorySeparatorChar); 
+        return GetPathCenas() + Path.DirectorySeparatorChar + file;
     }
-
-    public static void setFase(string fase)
+        public static void setFase(string fase)
     {
         fase_selecionada = fase;
     }
 
     public static string getimgFundo()
+    {       
+        return GetImgCena(fase_selecionada) + Path.DirectorySeparatorChar + "fundo";
+    }
+    public void mostrarMenu()
     {
-        string r = GetImgCena(fase_selecionada)+ "/fundo";
-        return r.Replace('/', Path.DirectorySeparatorChar);
+        canvasMenu.enabled = true;
+    }
+
+    public static void SetNivel(int ni)
+    {
+        nivel = ni;
+    }
+    public static void SetLinguagem(string l)
+    {
+        linguagem = l;
     }
 
 

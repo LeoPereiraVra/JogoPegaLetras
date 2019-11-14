@@ -30,14 +30,13 @@ public class ScriptVideo : MonoBehaviour
             fileData = File.ReadAllBytes(path);
             tex = new Texture2D(2, 2);
             tex.LoadImage(fileData);
-
+            imagem.texture = tex;
+            this.gameObject.SetActive(true);
         }
         else
         {
-            this.gameObject.active = false;
-        }
-
-        imagem.texture = tex;
+            this.gameObject.SetActive(false);
+        }        
     }
 
     public void Jogar()
@@ -52,4 +51,8 @@ public class ScriptVideo : MonoBehaviour
         Application.Quit();
     }
 
+    public void Configurar()
+    {
+
+    }
 }

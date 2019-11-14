@@ -14,12 +14,12 @@ public class hand_right : MonoBehaviour
     KinectManager manager;
 
     // joint position at the moment, in Kinect coordinates
-    public Vector3 outputPosition;
+    private Vector3 outputPosition;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        outputPosition = new Vector3(1f, 3f, 1.7f);
     }    
 
     // Update is called once per frame
@@ -45,10 +45,19 @@ public class hand_right : MonoBehaviour
 					//aumentar tamanho do movimento e rapides 
 					jointPos.Set(jointPos.x * 2, jointPos.y * 2, jointPos.z);
 					transform.localPosition = jointPos;
+                    outputPosition = jointPos;
 
-				}
-			}
-		}
+                }
+            }
+            else
+            {                                
+                transform.localPosition = outputPosition;
+            }
+        }
+        else
+        {
+            transform.localPosition = outputPosition;
+        }
     }
 
 	void OnCollisionEnter (Collision col)
